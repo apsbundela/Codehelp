@@ -1,0 +1,34 @@
+
+                                                            Browser Event
+
+                                        1.What are events ?
+                                        2.How to responsd these events
+                                        3.What data stored in events
+                                        4.how to stop events
+                                        5.LifeCyle of Event
+
+            monitorEvents('document) --> turn on events to see on console
+            unmonitorEvents('document) --> turn off events
+
+            interface - blueprint (claases like in java and C++) and dont compare this interface with java's interface
+
+            eventTarget - interface implemented by Object that can recieve events & may have listers for them
+                            
+                            methods : 1.addEventListner()
+                                      2.removeEventListner()
+                                      3.dispatchEvent()
+            eventTarget <------ Node <-------Element
+
+            1.addEventListner()
+                                - we can listen to event   
+                                - respond to event
+                                - hook into event
+
+                Pesudo code
+                            <eventTarget>.addEventListner(<event-to-listen-for>, <function-to-run-when-event-happen>); 
+                            - event-target
+                            - event - type
+                            - function
+
+            2.removeEventListner()
+                              
