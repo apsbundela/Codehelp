@@ -1,0 +1,50 @@
+.div{
+  
+
+}
+
+.div1{
+display: inline;
+background-color: red;
+
+}
+
+.div1-1{
+    display: inline;
+    position: absolute;
+    top: 95%;
+
+}
+
+.div2{
+    background-color: yellow;
+    position: relative;
+    left: 50%;
+    display: inline;
+
+}
+.div2-1{
+    display: inline;
+    position: absolute;
+    top: 300px;
+
+}
+.div2-2{
+    display: inline;
+    position: absolute;
+    top: 300px;
+
+}
+.div3{
+    display: inline;
+    position: relative;
+    left: 95%;
+}
+.div4{
+display: inline;
+position: relative;
+left: 93%;
+top: 598px
+}
+
+

@@ -1,0 +1,12 @@
+1.npm install -D tailwindcss postcss autoprefixer vite
+2.npx tailwindcss init -p
+
+3.Add * in content in tailwind.config.js
+4.add script in package.json
+	  "scripts":{
+    "start":"vite"
+  },
+5.Create main.css and insert and link
+	@talwind base;
+	@tailwind components
+	@tailwind utilities

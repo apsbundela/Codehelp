@@ -1,0 +1,88 @@
+.container{
+    height: 400px;
+
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start;
+    justify-content: flex-end;;
+    justify-content: center;
+    justify-content: space-around;;
+    justify-content: space-evenly;
+    justify-content: space-between; */
+
+
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch; */
+
+    /* align-items: center;
+    justify-content: center;
+    gap: 10px; */
+
+/* justify-content: space-evenly;
+align-items: baseline; */
+
+   /* align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-evenly;;
+    align-content: space-between;; */
+
+
+     align-items: flex-start;
+     justify-content: center;
+    
+}
+
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+    /* width: 100px; */
+    flex-basis: 100px;
+    
+}
+
+/************ order*********************** */
+
+/* 
+by default order value will be 0 as you changes order value 
+they will arrenged based on order value */
+
+/* 
+if we put two items with same order value then item order 
+will be consecutive and last given item will after that earlier put value */
+
+#box1{
+    /* value can be anythng to put item last */
+    order: 9;
+    flex-grow: 1;
+    flex-shrink: 4;
+    align-self: flex-end;
+
+}
+
+#box2{
+    /* when we put to item before box1 then order value will be less tham
+    box1 order value */
+
+    order: 3;
+}
+
+
+#box4{
+/* when we want to put box4 b/w box2 and box1 then order value should
+be anything b/w 3 and 9 */
+order:7;
+align-self: stretch;
+}
+
+#box3{
+    flex-grow: 1;
+    flex-shrink: 2;
+    align-self: center;
+}

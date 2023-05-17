@@ -1,0 +1,47 @@
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    /* display: flex;
+    justify-content: start;
+    align-items: start; */
+    height: 40px;
+    width: 150px;
+    background-color: red;
+    box-shadow: 2px 2px 5px grey ;
+
+}
+
+.inside-box{
+    width: 100%;
+    height: 100%;
+}
+
+.box:hover{
+    animation-name: button-load;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+}
+
+@keyframes button-load{
+    from{
+        background-color: black;
+        width: 0%;
+    }
+
+    to{
+        background-color: black;
+        width: 150px;
+    }
+}
+
+#btn-txt{
+    color: white;
+}

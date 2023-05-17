@@ -1,0 +1,64 @@
+Grid Properties :
+
+
+Grid Container Properties
+--------------------------
+
+1.Justify-Content  -align grid items respect to main(horizontal axis) 
+
+2.Align - Items - align grid items respect to cross(vertical axis)
+
+3.Align Content
+
+
+
+ 
+Grid-Item Properties
+----------------------
+1.justify-self 
+
+2.Align-self
+
+(grid-items k andar jo content pada hua hai,vo kis tarah se place hoga ye self btata hai)
+
+
+
+
+
+place-content
+------------
+ place-content property is used in flexbox and grid layouts, and is a shorthand property for the following properties:
+
+align-content
+justify-content
+If the place-content property has two values:
+
+place-content: start center;
+align-content property value is 'start'
+justify-content property value is 'center'
+If the place-content property has one value:
+
+place-content: end;
+align-content and justify-content property values are both 'end'
+
+
+
+place-self
+----------
+This property is a shorthand for the following CSS properties:
+
+align-self
+justify-self
+
+
+
+HW.Find out diffrence grid and inline-grid?
+
+
+
+															______________
+															MEDIA QUERIES|
+															______________
+
+	
+

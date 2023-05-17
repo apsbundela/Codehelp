@@ -1,0 +1,360 @@
+1.What is HTML? (skeleton)
+Ans	HTML is a markup language, which stands for Hyper Text Markup Langugae.where
+
+	Markup - anotation/tags used to markup content
+	HyperText -  one web page is linked to another age
+
+	which is used to show the description of content 	over the browser.
+
+2.Is HTML a programming Language?
+Ans	NO
+
+3. What is Tag?
+Ans Tag is a anotation which tells browser how to render diffrent element.
+	Ex. <p> my para</p> ---> element is paragaraph
+
+	    <img> this is image --->  </img>  ---> element is images
+
+		^        ^               ^               
+		Tag    Content         Tag
+		|                         |
+		---------------------------
+				|
+			  ELEMENT
+ 
+4.What are types of element ?
+Ans	1.Block element	
+			<p></p>, <h1></h1>,<section>,<article>etc.
+
+	2.Inline element - used to diffrentiate specific part
+			<em> empazise , <strong>, <a> links
+
+5.what are Empty tag ?
+Ans It is also called self closing tag which does no require closing tag.
+	ex. <br/> <img/> <input/>
+
+6.What are type of lists in HTML
+		1.order list 
+		2.unordered list
+		3.Description list
+
+7. What is an attribute ?
+	Its a property.or we can say they provide extra info about element. ex. <img src = " ">	src is attribute of img tag.			
+
+attributes
+id  ----> all element
+class---> all element
+src ----> img tag
+href----> <a> anchor tag
+
+8. Explain 
+<!DOCTYPE html>    -----> tells your browser that its an HTML 5 doc
+<html lang="en">   -----> tells contect of web page is in english
+<head>             -----> contains metadata of HTML doc like style,title js etc.
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>           ------> contains actual content
+    
+</body>
+</html>
+
+9. What is metatag?
+	-	Define metaData about html Doc
+
+	-	alway under inside head tag
+	
+	- 	used to specify
+				> characterser
+				> page description
+				> keyword
+				> author
+				> viewport
+10.explain
+	viewPort means whatevert the display or area you can see on the screen
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				
+						^						^
+viewport width willbe be device with       by default intial zooming level
+
+
+11. What is poet Problem/whic tag will we using to write poem on html?
+	<pre>
+ 			Twinkle Twinklw
+			Little star
+
+
+Some Tags
+		<b>
+		<emp>
+		<strong>
+		<sup>
+		<sub>
+		<q>  --- quatation tag
+		<cite> --- citation tag
+
+12. Explain table in HTML?
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>March</td>
+          <td>500</td>
+        </tr>
+    <tfoot>
+        <td>Total</td>
+        <td>2000</td>
+    </tfoot>
+      </tbody>
+    </table>
+
+
+13. what is row span and column span ?
+
+
+14. what column group?
+Answ : To style speccific coloum we use coloumn group
+    <table>
+        <colgroup>
+           <!-- <col span="3" style="background-color: red" />
+            <col span="1" style="background-color:blue" />/-->
+
+            <col span="1">
+            <col span="1" style="background-color: red" />
+            <col span="1" style="background-color:blue" />
+            <col span="1" style="visibility: collapse;" /> 
+          </colgroup>
+      <tr>
+        <td rowspan="2">Satae of health</td>
+        <td colspan="2">Fasting Value</td>
+        <td>After Eating</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Maximum</td>
+        <td>Minimum</td>
+        <td>2 hour after eating</td>
+      </tr>
+      <tr>
+        <td>Pre-Diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+      </tr>
+      <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>less than 140</td>
+      </tr>
+      <tr>
+        <td>Diabetes</td>
+        <td>More than 126</td>
+        <td>N/A</td>
+        <td>More than 200</td>
+      </tr>
+    </table>
+	
+
+
+15. when we use <blockquote> tag?
+Ans: when we want to show the some content of another resource then we use it.
+
+
+16.Which tag we use to use link ?
+Answer : anchor tag , <a href="https://www.mybook.com"> </a>
+    <a href="https://www.facebook.com" target="_blank">go to facebook</a>
+    <a href="tel:+918827852689">call me</a>
+    <a href="mailto:bundela.ayush99@gmail.com">mail me</a>
+
+
+17.Is div is block element or inline element?
+	Block element
+
+18. Can we make it inline element?
+	Yes, by default in its css property display property is block, which we can explicity change to inline.
+	<style> 
+			#id{
+			display : inline;
+			}
+	</style> 
+
+19.what is span tag?
+	It is same as div, the only diffrence it is inline element.and we can make block element using css.
+
+
+20. Semantic tags?
+Ans : Meaningful tags, which provide some meaning to the content provided to those tags called semantic tag.
+	ex.<table></table>, <form></form>,<figure></figure>,<section></section>
+
+
+21. can we use article tag under section tag and vice versa?
+	yes we can.
+
+22.Is there any difference b/w header and h1 tag?
+Ans : In summary, the <header> tag is used to define a container for introductory content and navigation, while the <h1> tag is used to define the main heading of a page. 	The <header> tag can include other elements like <nav> and <h1> as well as other headings.
+
+
+23. Can we use Header tag under footer tag ?
+
+
+24.can we use multiple header tag?
+Ans You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element
+
+25.Diff b/w main and body tag?
+
+
+26. What is DOM ?
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+27.What is BOM ?
+
+
+28.What Iframe does ?
+	to show other resources of website on ours we use this tag
+
+29.Diffrence b/w name and id in input tag?
+	id is identification for the style in csss and name is attribute  is identification at server side.
+
+30.What is for in label tag?
+	that is id for label tag. 
+
+Form in html
+
+
+    <form action="https://www.instagram.com" >
+      <div>
+        <!-- for is id for label -->
+        <label for="name">Name :</label>
+        <input type="text"  name="name" id="name" placeholder="Enter your name" />
+      </div>
+      <div>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" />
+      </div>
+      <div>
+        <label>Contact :</label>
+        <input type="number" name="contact" class="contact_style" />
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <select class="drop-down-style" name="gendder" >
+            <option>Male</option>
+            <option>Female</option>
+            <option>Transgender</option>
+        </select>
+      </div>
+      <div>
+        <label>DOB:</label>
+        <input type="datetime-local" name="" id="">
+      </div>
+      <div>
+        <span>Rating:</span>
+  
+        <input type="radio" name="radio" id="">
+        <label for="rating1">1</label>
+        <input type="radio" name="radio" id="">
+        <label for="rating2">2</label>
+        <input type="radio" name="radio" id="">
+        <label for="rating2">3</label>
+        <input type="radio" name="radio" id="">
+        <label for="rating4">4</label>
+        <input type="radio" name="radio" id="">
+        <label for="rating5">5</label>
+    
+      </div>
+      <div>
+          <label>Write your message here..</label>
+          <div>
+       <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+          </div>
+      </div>
+      <div>
+        <div>
+            <input type="Submit" name="submit" id="submit" value="Submit">
+            <input type="reset" name="rest" id="rest" value="Reset">
+          </div>
+    </form>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ayush Pratap Singh</h2>
+    <small>Founder of new Organic Farming Comapany</small>
+    <br />
+    <a href="#resources">go to Resources</a>
+    <figure>
+      <img src="Ayush-Photo.JPG" alt="Founder Picture" height="200" />
+      <figcaption>A photograph of APS</figcaption>
+    </figure>
+
+    <h3>Biography</h3>
+    <small
+      >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
+      nostrum, perspiciatis, corrupti qui dolores illum temporibus ut cumque
+      sunt nulla laboriosam explicabo porro eligendi debitis? Rerum vero
+      recusandae, aspernatur, corporis nisi eaque nulla voluptatum sed porro
+      nihil alias itaque quam minus quos consequatur impedit nam! Voluptate,
+      ipsa. Ipsa animi mollitia perferendis sequi corrupti accusantium neque
+      laudantium dolorum temporibus cumque nostrum possimus minima veritatis
+      cupiditate libero voluptates molestias voluptas, maiores magni.</small
+    >
+    <h3>Achievments</h3>
+    <ul>
+      <li><b>1998 - </b> <small>Nobel Prize</small></li>
+      <li><b>2010 - </b> <small>Padma Vibhushan</small></li>
+      <li><b>2010 - </b> <small>TECH Best award</small></li>
+      <li><b>2010 - </b> <small>Anna Data Award</small></li>
+      <li><b>2010 - </b> <small>Software Revolution Award</small></li>
+    </ul>
+
+    <blockquote>
+      <p>
+        one of the most inspiring and influential person in the world
+      </p>
+
+
+    <cite
+      >
+      Times Management -- <a href="https://www.facebook.com" target="_blank">The famous people</a>
+    </cite
+    ></blockquote>
+    <h3 id="resources">Resources</h3>
+    <small>Learn More about this personality..</small>
+    <ul>
+        <li><a href="">Wikipedia of him</a></li>
+        <li><a href="">Autobiography-My Journey</q> </a></li>
+        <li><a href="">Times now article</a></li>
+    </ul>
+  </body>
+</html>

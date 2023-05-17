@@ -1,0 +1,106 @@
+Refrence:
+
+Transforms :
+ https://www.w3schools.com/css/css3_2dtransforms.asp
+
+
+1.What is Flex Box ?
+Ans :- It layout model
+	--> using which we can do spacing distribution
+	--> it also have aligment capabilities 	
+
+
+
+	###To convert container to flex we use property
+	
+	display: flex;
+
+Flex-container properties
+---------------------------------
+
+1.Flex Direction
+	###To change the direction of main axis from horizontal to vertical we use property
+	
+		flex-direction : coloumn;
+				coloumn-reverse(reverse the items in opposite direction)	
+	###To change the direction of main axis from 		vertical
+		to horizontal we use property 
+	
+		flex-direction : row;
+				    : row-reverse(reverse the items in opposite direction)	
+
+2. flex-wrap
+			-wrap (use when we want preserve width even when we reduce screen size) 
+			-no wrap
+			-wrap-reverse
+
+3.Flex-flow : this is a combination of flex wrap and
+		   flex flow.or we can say it is shorthand notation.
+		flex-flow : row wrap;
+
+
+
+
+note : by-default the direction of main axis will be
+	 horizontal only.
+
+4.Justify-content : this property align items over main axis
+    justify-content: flex-start;
+    justify-content: flex-end;;
+    justify-content: center;
+    justify-content: space-around;;
+    justify-content: space-evenly;
+    justify-content: space-between;
+
+
+5. align-items :this property align items over cross axis
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+
+
+6.align-content : Jitni bhi aapki flex items ki rows ban rhi hai unke beech ki spacing ya rows ki alignment handel kar leta hai
+	
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-evenly;;
+    align-content: space-between;;
+
+
+Flex-Items properties
+---------------------------------
+
+
+1.Order - to change the order of flex items
+	  - by default value of all flex items will be zero 0.
+
+
+2.flex-grow - by deafult value of flex-grow will be 0.
+
+3.flex-shrink   -  is property se ye decide hoga ki item ki shrink hone ki speed kya hogi.
+			- by default value of flex-shrink will be 1.
+
+4.flex-basis - items width dene k liye use hota hai.
+
+		width property bhi vhi kaam karti hai but ydi content bahate hain toh width se jyda ka content cut ho jata hai
+		but flex-basis mein content badthta hai toh item ki width bhi badh jati hai.
+
+5. flex - it is a short hand property for all above four property.
+		ex- flex : 3,1,8,120px
+
+
+6.align-self - to align items over the page
+			
+			align-items: flex-start;
+			align-self: flex-end;
+			align-self: center;
+			align-self: stretch;
+
+	
+	
+		

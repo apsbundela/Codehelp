@@ -1,0 +1,95 @@
+1.What is css?
+	It stands for Cascading Style Sheet, which make visulas of html docs appealing.
+
+2.What is Selector ?
+	It is a way using which we can select en element.
+
+3.What are types of Selector?
+	1.Simple Selector
+		1.Element selector
+		2.Class selector
+		3.ID selector
+	
+	2.Pseudo selector
+	3.Multiple selector
+	
+
+4.What is nested selector
+
+5.What is universal selector
+
+6.What is attribute selector
+Selects all elements that have the given attribute.
+
+<div lang="en-us en-gb en-au en-nz">Hello World!</div>
+<div lang="pt">Developer!</div>
+<div lang="zh-CN">Sidak！</div>
+<div lang="zh-TW">Ayush！</div>
+<div data-lang="zh-TW">Amul！</div>
+
+/* All divs with a `lang` attribute are bold. */
+div[lang] {
+  font-weight: bold;
+}
+
+/* All divs without a `lang` attribute are italicized. */
+div:not([lang]) {
+  font-style: italic;
+}
+
+/* All divs in US English are blue. */
+div[lang~="en-us"] {
+  color: blue;
+}
+
+/* All divs in Portuguese are green. */
+div[lang="pt"] {
+  color: green;
+}
+
+/* All divs in Chinese are red, whether
+   simplified (zh-CN) or traditional (zh-TW). */
+div[lang|="zh"] {
+  color: red;
+}
+
+/* All divs with a Traditional Chinese
+   `data-lang` are purple. */
+/* Note: You could also use hyphenated attributes
+   without double quotes */
+div[data-lang="zh-TW"] {
+  color: purple;
+}
+
+
+7.Box Model Basic terms?
+	Padding - space b/w border and content
+	margin  - space beyond border is margin
+
+8.What will happen if the box having 100px hight and width	but we write 1000 words?
+Ans It will overflow.
+
+
+9.Units in CSS.
+
+	- CSS pixel and hardware pixelare diffrent	
+	- 1 css pixel = 1/96 inch
+
+Absolute unit (fixed unit)
+	mm , cm , in , px
+
+petcentage unit (relative to parent )
+	- div {width : 10%}
+
+Relative unit to Font size
+	em  -  relative to parent font size
+		ex. if parent has 18px font size then you giving 2em means 2em*18 = 36 px
+     
+	rem - relatiove to root tag font size (html) 
+
+Relative Unit ViewPort
+	vw - 1/100 *width of view port
+	vh - 1/100 * height of view port
+
+10.What diff b/w 1% and 1vw?
+	

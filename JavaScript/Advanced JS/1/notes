@@ -1,0 +1,101 @@
+
+
+Window : - It is a global object.
+            It is created by browser. 
+            It represents a browser window.
+
+       Windows has -
+       1.DOM    2.BOM   3.JS Core
+
+DOM  :- It stands for Document object model.
+        Converting all html page of project to a JS object is Document and this model is document object medel.  (print document on console to verify).
+
+        Q.How the Tree like structure converted to DOM ?
+                charchter ---> tags ---> token(by tokenizer)-----> nodes -----> DOM
+
+        getElementById('id') : it is called on document object
+                               It returns single object
+
+        getElementsByClassName('className') : it is called on document object
+                                           It can return multiple object 
+                                           this list returned is not an array.
+                                           This is a live HTMLCollection 
+        
+        getElementsByTagName('TagNAme) : it is called on document object
+                                        It can return multiple object 
+                                        this list returned is not an array.
+
+        $0 - if select any html element and using hover on it then we can print whole html code selected element.
+
+        querySelector('#header') <- will access the element of id header
+        querySelector('.header')<-  will aceess the only first element of class header(in case of multiple class with same name)
+        querySelector('header) <- will access the first element of tag name header (in case of multiple tag with same name)
+        querySelectorAll('.hidden') <- will access all element with the class name of hidden
+
+        let content = querySelectorAll('hidden);
+        console.log(content);
+
+        ********Updating Exisiting Content********
+        -> innerHTML : gets an element/ all of its descended
+                     : sets an element's html content
+        ->.outerHTML
+        ->.textContent
+        ->.innerText
+
+        Ex. let content = document.querySelector('.chakra-heading');
+                content.innerHTML --> will print content
+                content.innerHTML = "Ayush is Growing Industry it is commendeble" --> will set content
+        Q diffrence b/w textContent and innerHTML
+
+
+        ********Adding  New  Elemet/content********
+        -> createElement();
+                        ex.let newchild = document.createElement('span')>>want to create span tag
+        -> to append newchild 
+                        ex. content.appendChild(newChild)
+        (newly created element (child) will come at bottom of content)
+
+
+        ******Adding content to new element******
+        ->Cretaing Text-Node(fuddu way)
+
+        ->simple way
+                let myPara = document.createElement('p');
+                myPara.textContent = 'I am text';
+                
+
+        *******Adding New Elemnt (at desired place (not at only bottom))
+
+        ->insertAdjacentHTML() method
+                        -has to be called with two arguments
+                        - location/postion (where)
+                                        1.beforebegin
+                                        2.afterbegin
+                                        3.beforeend
+                                        4.afterend
+                        - HTML text / content to be implemented(what)
+        
+        
+         ********Remove Elemet/content********
+         -> removeChild() method
+                        - it is opposite to appendChild
+                        - should known parent element   
+                        - should known child element
+
+        -> 2nd way child.parent.remove(child) { do MDN  easy method}
+
+                        
+                    +++++++++ Chnges in CSS using JS+++++++++++
+        -> .style
+        -> .cssText
+        -> .setAttribute()
+        -> .className
+        -> .classList
+
+
+BOM  :- ->It stands for The Browser Object Model (BOM);
+       
+       ->Content of webPage ko k alwa ydi JS kisi or cheez se means browser se communicate karna chati toh we use BOM
+         The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. The BOM allows JavaScript 
+         to “interact with” the browser
+        

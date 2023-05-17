@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+    background-color: cornsilk;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+position: relative;
+left: 33%;
+top: 33%;
+background-color: white;
+height: 250px;
+width: 33%;
+border-radius: 10px;
+}
+
+.left{
+    background-color: blue;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    object-fit:fill;
+}

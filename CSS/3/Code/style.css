@@ -1,0 +1,35 @@
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 2px solid black;
+
+    /* grid container properties */
+    display: grid;
+/* 
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 90px 90px 90px 90px;    
+
+
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 90px repeat(3,1fr);
+    gap: 15px;
+}
+
+.box{
+    background-color: aqua;
+    border: 2px solid black;
+} 
+
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+

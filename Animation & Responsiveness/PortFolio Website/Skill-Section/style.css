@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+:root{
+    --bgOrange: #e84949;}
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Be Vietnam Pro",sans-serif;
+        color: black;
+    }
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.skill-logo-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+    position: relative;
+}
+
+.caps{
+    font-size:90px;
+    color: var(--bgOrange);
+
+}
+.skill-heading{
+    color: var(--bgOrange);
+    line-height: 1;
+    font-size: 30px;
+}
+.skill-subheading p{
+    width: 500px;
+    margin-top: 10px;
+    line-height:1.2;
+}
+.skill-left{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.skill-right{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+
+}
+.skills-logo{
+    width: 100px;
+    height: 100px;
+    transition:all 0.5s;
+
+}
+
+.skills-logo:hover{
+    transform: scale(1.2);
+}
+
+.blob-style{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    z-index: -1;
+    top: 150px;
+    left: 170px;
+    animation: blob-movement 7s infinite;
+}
+
+@keyframes blob-movement {
+    50%{
+        top:40%;
+        left:20%;
+    }
+}

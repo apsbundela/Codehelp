@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro",sans-serif;
+}
+
+#wrapper{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: -10;
+}
+
+.container{
+     width: 1200px;
+    margin: 0 auto;
+}
+
+
+.absolute{
+    position: absolute;
+    left: 20rem;
+}
+
+.icon-user{
+    z-index: -9;
+    animation-name: profile-scale;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 2.3rem;
+}
+
+@keyframes profile-scale {
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+
+    }
+
+    50%{
+        filter: grayscale(1);
+        transform: scale(1.1);
+        box-shadow: 2px 3px 8px black;
+
+    }
+
+    100%{
+        filter: grayscale(0);
+        transform: scale(1);
+
+    }
+}
+
+.icon-dots{
+    left: 38rem;
+    top: 25rem;
+    animation-name: dot-movement;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+}
+
+@keyframes dot-movement {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
+.icon-cube{
+    left: 42rem;
+    top: 20px;
+    animation: cube-rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes cube-rotation {
+    0%{
+        transform: translateY(0px);    
+
+    }
+    
+    50%{
+        transform: translateY(-15px);
+        transform:rotateY(180deg)    
+    }
+
+    100%{
+       transform: translateY(0x)  
+    }
+}

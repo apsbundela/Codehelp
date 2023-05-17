@@ -1,0 +1,24 @@
+
+.box{
+
+    margin: 200px;
+    background-color: aqua;
+    transform: translate(100px,50px);
+    /* simiiliar to */
+    transform: translateX(100px);
+    transform: translateY(50px);
+
+    /* to rotate using degree */
+    transform: rotate(-45deg);
+
+    /* for zoom we use scale, scale(zoom) horizontally and vertically */
+    transform: scale(2,90);
+    transform: scaleX(2);
+    transform: scaleY(90) ;
+
+
+    
+    transform: skew(45deg);
+
+
+}

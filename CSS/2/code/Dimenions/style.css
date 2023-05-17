@@ -1,0 +1,16 @@
+.box{
+
+    max-height: 200px;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+ 
+
+    border: 1px solid black;
+}
+.box2{
+
+    min-height: 200px;
+    border: 1px solid black;
+}

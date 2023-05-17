@@ -1,0 +1,105 @@
+Commands : -
+		To list content  : - dir(win) ls(mac)
+
+		To move some 
+		folder/directory  : - cd Deskstop
+
+		To Parent folder : -   cd..
+
+		To intialize a 
+		folder as repository  :- git init (run that command at that folder which you wanto make repo) Desktop
+						ex.- C:\Users\bunde\Desktop\dummy>git init
+		
+		To clone repo         :- git clone url
+
+
+Life Cyle of changes 
+========================
+Working Dir ------git add-----> Stagged Area------git commit----->master Repo(Remote Repo)
+
+		To add file           :  git add file name / git add --all / git add .
+
+		To commit file        :  git commit -m"any message"
+		
+			
+
+		To track changes      :  git diff (under all repo) / git diff file name (under particular file)
+
+		To check number of 
+		commits with commit id : - git log
+		date and author name
+
+		To check number of 
+		commits with commit id : - git log -p
+		date and author name
+
+		To check number of 
+		commits with commit id : - git log --oneline
+		and commit mesgs
+
+		
+		To check modified files   :- git log --stat
+
+		To check latest commit    :- git log -- anyNumber
+
+		To check all changes
+		in particular commit      :- git show commitID
+
+head ->>>>> head is a latest commit
+
+		if you want to discard   : git restore file name
+		latest commit            
+		
+		if you dont want to	   : create a file with .gitigonre extention and put file name which you dont want to track
+		track some file in repo
+
+
+Branching, Tagging & Merging
+================================
+
+		Create Branch          : git branch branchName
+		
+		To know current		 : git branch
+		Branch Name               
+
+		checkout to branch     : git checkout branchName 
+
+		Create and checkout
+		to the created branch  : git checkout -b branchName
+
+		Merge some branch      : git merge branchName(which we wants to merge in current branch)
+		to current branch
+
+		To Delete Branch       : git branch -D ayushBranch
+
+		to stash changes       : git stash
+
+		to apply stash changes : git stash apply
+
+Undo commits commands
+===================================
+
+		git commit -- amend  : (at the most recent commit) It uses to changes the commit message (esc, : , wq) 
+
+		git revert           : revert given commit (given ssh commit Id)
+
+		git reset            : delet commit (most dangerous)
+
+						ex. git reset --soft commit Id (the commit Id where the head you want to point)
+						   
+
+						    git reset --mixed   (apke changes modified dikhata rhega or head bhi jha chagoge jis commit mn chla jayega)
+						    git reset --soft	  ( apke changes staged area mn dikhenge rr head bhi jha chagoge jis commit mn chla jayega)your working directory  																									diffrences will show on staged
+						    git reset --hard	  (all changes of working directory will be discared)
+
+Link local Repo to Remote Repo(GitHub)
+======================================
+
+1. Create your Repo in local using git init and make changes and commit changes
+2. Map local dir to Remote for gitHub they giv command and URL
+	git remote add origin https://github.com/apsbundela/myrepo.git
+
+		git config --global user.name "apsbundela"
+		git config --global user.email "bundela.ayush99@gmail.com"
+						
+																					

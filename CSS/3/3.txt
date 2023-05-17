@@ -1,0 +1,51 @@
+1.Diffrence b/w img and Background Image.
+
+
+2.Diff b.w grid and Flex?
+Ans : Grid is layout speific and Flex is content 	 specific.
+
+
+Grid Container Properties
+---------------------------
+
+#To make Grid we use Property 
+		
+		display : grid
+		
+# grid-template-columns  - to divide container in columns
+
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;  		-> (fr - is unit which stands for fraction and here conatiner has 3 equal size of coulumn)
+    grid-template-columns: 100px repeat(2,1fr);  -> (first coloumn is of 200px and rest two(using repeat is of equal length)
+    grid-template-columns: repeat(4,1fr)    
+   grid-template-columns: repeat(2,2fr) repeat(2,1fr);
+
+
+
+#    grid-template-rows: - to divide container i rows
+
+	    grid-template-rows: 90px repeat(3,1fr);
+
+#    gap  - to give gap b/w row and coloumn
+
+		gap : 15px
+
+Grid item Properties
+--------------------------
+
+#grid-column-start : to span a grid item from given colomn-line number (please carefull about line here go and check image for it)
+
+		grid-column-start: 1;
+
+#grid-column-end: to span a grid item till given colomn-line number
+	
+ 		grid-column-end: 3;
+
+#grid-column-start : to span a grid item from given row-line number 
+
+		grid-row-start: 1;
+
+#grid-column-end: to span a grid item till given row-line number
+	
+ 		grid-row-end: 3;
+

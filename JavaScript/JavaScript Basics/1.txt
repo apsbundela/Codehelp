@@ -1,0 +1,5 @@
+Diffrence b/w let and var?
+
+
+Primitive are copied by their value
+References are copied by their address/references
