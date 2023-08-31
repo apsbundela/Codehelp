@@ -52,6 +52,10 @@
 // function is also an object
 // all object have constructor
 
+
+// Primitive are copied by their value
+// References are copied by their address/references
+
 //for-in loop
 // let rectangle = {
 //         length:2,
@@ -60,6 +64,24 @@
 // for(let key in rectangle){
 //     console.log(key, rectangle[key]);
 // }
+
+//Object Cloning
+// 1.iteration (using for-in loop)
+// 2.Assign -> let des = Object.assign({},src);
+// 3.Spread operator -> let des = {...src};
+
+// let src = {
+//   a:10,
+//   b:20,
+//   c:30
+// }
+
+// let des = {};
+// for(key in src){
+//   des[key] = src[key]
+// }
+// console.log(des);
+
 
 //string - primitive
 //let message = "Hello This is ayush";
@@ -148,12 +170,57 @@
 
 //maping with ibjects
 
-let numbers = [1, 2, -3, -9];
+// let numbers = [1, 2, -3, -9];
 
-let filtered = numbers.filter((number) => number < 0);
+// let filtered = numbers.filter((number) => number < 0);
 
-let items = filtered.map(function (num) {
-  return { value: num };
-});
+// let items = filtered.map(function (num) {
+//   return { value: num };
+// });
 
-console.log(items)
+// console.log(items)
+
+// Function Assignment
+// 1.Named 
+// 2.Anonymous
+
+// argumesnts (it is object)
+
+//###rest operator
+
+// function sum(...args){
+//   console.log(args);
+// }
+
+// sum(1,2,3,4,5,6);
+
+
+// function sum(num,value,...args){
+//   console.log(args);
+// }
+
+// sum(2,6,8,3,4,5,6);
+
+//rest parameter should be last parameter
+
+
+//### Deafult parameter
+
+//left most parameter should be Default parameter
+// function SI(p,y,r=5){
+//   return p*y*r/100;
+// }
+
+// SI(1,22,10);
+// SI(1,2)
+
+
+//TRY Catch
+
+//SCOPE (let vs var)
+
+//Reducing an array
+
+// let arr = [1,2,3,4]
+let totalSum = arr.reduce((accumulator,currentValue)=>accumulator+currentValue,0);
+console.log(totalSum);

@@ -1,0 +1,14 @@
+.products{
+    height: 70%;
+    width: 40%;
+    background-color: yellow;
+    box-shadow: 0 0 3px grey;
+}
+
+.product-paraent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

@@ -1,5 +1,70 @@
+Variables in JS ?
+
+1. let 
+2. var 
+3.const
+
+
+let a = 5 ---> 5 is number Literal
+let b = "ayush" ---> ayush is string literal
+
+
 Diffrence b/w let and var?
 
+let scope is blocked scope
+var scope is file scope
+
+Variable Naming :
+
+1.variable name can not be reserved words
+2.meaningfull name
+3.can not start with a number
+4. can not start with space or - 
+5.should use camelCase
+
+
+
+###Primitive types
+
+        String
+        number
+        Boolean
+        Undefined
+        Null
+
+
+Diffrence b/w undefined and Null
+
+undefined - > where the variable is not yet defined 
+            ex let a; console.log(a) ---> will give undefined
+
+Null -> where the variable is defined but that variable value have nothing mens flused the value of variable
+        ex. let a = null; console.log(a)
+
+###Refrence type
+
+        Objects
+        Arrays
+        Functions
 
 Primitive are copied by their value
 References are copied by their address/references
+
+
+###With Non-Booleans
+
+falsy               truthy
+
+ -> undefined       anything that is not falsy
+ ->null
+ ->NaN
+
+ ex false || 'ayush' ==> ayush
+
+
+###Loops
+for loop
+do while loop
+while loop
+for-in loop
+for-of loop

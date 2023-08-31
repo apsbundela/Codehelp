@@ -1,9 +1,9 @@
 .box{
 
     max-height: 200px;
-    /* overflow: visible; */
-    /* overflow: hidden; */
-    /* overflow: scroll; */
+    /* overflow: visible;
+    overflow: hidden;
+    overflow: scroll; */
     overflow: auto;
  
 

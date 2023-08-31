@@ -1,0 +1,29 @@
+
+:::  Performance  :::
+1.measure speend of code
+2.hpw to write efficient and performance code
+3event loop
+
+#performance.now()
+
+#Reflow and Reprint
+
+#document Fragment  - light weight document object
+
+#call Stack
+
+JS is single threaded language means can execute only command at a time.
+
+# ::::: Event loop   ::::::
+            call Stack
+            Browser
+            Event queue
+(philip Robert)
+    Synchronus :- occuring at same time 
+  - Asynch code --> use JS event loop
+  - any async code is handeled by Browser
+  - when this async code is ready to be executed it is moved to the quesue where it waits untill call stack empty
+
+
+  # setTimeout() method
+  

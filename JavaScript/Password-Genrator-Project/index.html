@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="pass-display">
+            <input type="text" placeholder="Password"  readonly display-password>
+            <button onclick="copyClipBoardText()">
+                <img src="assests/copy.svg" alt="copy image"  btn-img class="btn-img" >
+                <span></span copied-msg>
+            </button>
+        </div>
+    
+        <div class="pass-creation">
+            <div class="length-label">
+                <span>Password Length</span>
+                <span data-len-password id="data-len-label">0</span>
+            </div>
+    
+            <!--Slider-->
+    
+            <input type="range"  id="slider" min="1" max="20" step="1" data-len-slider>
+    
+            <!--check boxes-->
+            <div class="check-box-container">
+        <label class="checkMark">
+            <input type="checkbox"  id="upperCaseCheck">
+            Include Uppercase Letter
+        </label>
+
+        <label class="checkMark">
+            <input type="checkbox"  id="lowerCaseCheck">
+            Include LowerCase Letter
+        </label>
+
+        <label class="checkMark">
+            <input type="checkbox"  id="numberCheck">
+            Numbers
+        </label>
+
+        <label class="checkMark">
+            <input type="checkbox"  id="symbolCheck">
+            Symbol
+        </label>
+            </div>
+
+        <!--geanrate button-->
+                <button type="submit" id="createButton">Generate Password</button>
+    
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="script.js"></script>

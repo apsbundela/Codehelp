@@ -1,0 +1,34 @@
+Synchronous code : code will execute line by line at a same time
+Asynchronous Code : code will execute but time is not certain
+                    it(async code) use event loop
+
+Features of async code :
+                - clean/ concise
+
+
+--------------------- Promise------------------------
+
+
+----------------------Async Await--------------------
+
+  Special syntax to work with Promise.
+  await - wait untill that task not completed.
+  async - The keyword async before a function makes the function return a promise:
+
+  exmple 
+  async function abcd (){
+    return 7;    
+}
+
+abcd();
+--------------------FETCH API-------------------------
+-> syantax for get call
+  fetch('url')
+
+-> syantax for post call
+  fetch('url',option)   here option is Object
+
+-> fetch api returns Promise
+
+
+------------------Closures----------------------------

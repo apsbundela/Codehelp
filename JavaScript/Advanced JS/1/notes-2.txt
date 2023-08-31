@@ -1,0 +1,79 @@
+
+                                                            Browser Event
+
+                                        1.What are events ?
+                                        2.How to responsd these events
+                                        3.What data stored in events
+                                        4.how to stop events
+                                        5.LifeCyle of Event
+
+            monitorEvents('document') --> turn on events to see on console
+            unmonitorEvents('document') --> turn off events
+
+            interface - blueprint (claases like in java and C++) and dont compare this interface with java's interface
+
+            eventTarget - interface implemented by Object that can recieve events & may have listers for them
+                        - top level entity
+                            
+                            methods : 1.addEventListner()
+                                      2.removeEventListner()
+                                      3.dispatchEvent()
+            eventTarget <------ Node <-------Element
+
+            1.addEventListner()
+                                - we can listen to event   
+                                - respond to event
+                                - hook into event
+
+                Syntax                                             type ,   listner , useCapture
+                            <event - target>.addEventListner(<event-to-listen-for>, <function-to-run-when-event-happen>,); 
+                            - event-target
+                            - event - type
+                            - function
+                            - useCapture - refer to particular phase (by default it is bubbling and when we pass true will refer capturing phase)
+            2.removeEventListner()
+                              == loose equality (allow type coercion)
+                              === strict equality (restrict type coercion)
+                type coercion -> where JS will try to convert the items being compared to same type
+                removeEventListner will execute and will remove only when addEventListner it
+                1.has same event target as addEventListner
+                2.has same type as addEventListner
+                3.has same function as addEventListner
+
+                wrong way(because here removeEventListener and addEventListener has two diffrent function because in memory both will have diffrent address)
+                ---------------------------------------
+                document.addEventListener('click',function(){
+                    console.log("Clicked on  the document");
+                })
+
+                removeEventListener won't run
+                document.removeEventListener('click',function(){
+                    console.log("Clicked on  the document");
+                })
+
+
+                correct way to execute removeEventListener(because here removeEventListener has same function which it wants to remove added by addEventListener)
+                -------------------------------------------------
+                function eventFunction(){
+                    console.log("Print add remove");
+                }
+
+                document.addEventListener('click',eventFunction)
+                document.removeEventListener('click',eventFunction)
+    
+    *****************  Phases of an Event *************************
+
+            1.Capturing phase
+            2. At Target phase
+            3.Bubbling phase
+
+The Event Object : when an event occurs, addEventListner function gets/recieves an event Object which contains lots of info
+
+The Default Action - anchor tag ----> when event occurs (click the link) window opens---> this is default behavior which we can prevent using preventDefault()
+
+Avoid too many events 
+
+target Event Property
+
+nodeName Property
+        

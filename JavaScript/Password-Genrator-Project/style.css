@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+  
+    --vb-yellow: hsl(52, 100%, 62%);
+  
+  
+    --pl-white: hsl(0, 0%, 100%);
+  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+body{
+    width: 100wh;
+    height: 100vh;
+    background: rgb(71,15,106);
+    background: linear-gradient(72deg, rgba(71,15,106,1) 0%, rgba(13,9,29,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color:var(--pl-white) ;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.pass-display{
+    background-color: var(--dk-violet);
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    position: relative;
+
+}
+
+.container{
+    width: 90%;
+    max-width: 400px;
+}
+
+input[type="text"] {
+
+    background-color:transparent;
+    height: 100%;
+    width: 100%;
+    outline:0;
+    border:none;
+    color: var(--vb-yellow);
+    margin-left: 10px;
+    font-size: 1.2rem;
+    padding: 2px;
+    position: absolute;
+  }
+
+  .btn-img{
+    position: absolute;
+    left: 90%;
+    height :20px;
+     width : 20px;
+  }
+
+  ::placeholder {
+    font-size: 1.5rem;
+    color: var(--vb-yellow);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    padding: 12px;
+  }
+
+  .pass-creation{
+    position: relative;
+    background-color: var(--dk-violet);
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 25px;
+
+  }
+
+  .length-label{
+    color: var(--pl-white);
+    font-size: 1.3rem;
+  }
+
+  #data-len-label{
+    color: var(--vb-yellow);
+    position: absolute;
+    left: 90%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+
+  }
+
+                          /***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--lt-violet);
+    height: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: var(--vb-yellow);
+  }
+
+  /***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -12px; /* Centers thumb on the track */
+    background-color: var(--vb-yellow);
+    height: 2rem;
+    width: 2rem;
+    border-radius:100%;
+    
+
+ }
+
+ input[type="range"]::-webkit-slider-thumb:hover {
+  outline: 2px solid var(--vb-yellow);
+  background-color: var(--dk-violet);
+  transform: scale(0.9);
+  transition: 0.1s ease;
+  box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);  
+}
+
+ /***** Focus Styles *****/
+/* Removes default focus */
+input[type="range"]:focus {
+    outline: none;
+  }
+
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]:focus::-webkit-slider-thumb :hover {
+  color: var(--dk-violet);  
+}
+
+.checkMark{
+  color: var(--pl-white);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  position: relative;
+
+}
+
+.check-box-container{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.checkMark input{
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--vb-cyan);
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.35rem;
+}
+
+.checkMark input:checked {
+  background-color: var(--vb-cyan);
+}
+
+.checkMark input:checked::before{
+  content: '✔';
+  position: absolute;
+  color: var(--dk-text);
+}
+
+#createButton{
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--vb-violet);
+  text-align: center;
+  border-radius: 0.75rem;
+  border-bottom: 0.35rem solid var(--vb-yellow);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--vb-yellow);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
